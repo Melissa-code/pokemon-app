@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { POKEMONS } from '../mock-pokemon-list';
 import { Pokemon } from '../pokemon';
 import { CommonModule } from '@angular/common'; // import module to use *NgIf=""
@@ -10,7 +10,7 @@ import { PokemonTypeColorPipe } from '../pokemon-type-color.pipe'; // Importez l
 @Component({
     selector: 'app-list-pokemons',
     standalone: true,
-    imports: [Router, CommonModule, BorderCardDirective, PokemonTypeColorPipe],
+    imports: [RouterOutlet, CommonModule, BorderCardDirective, PokemonTypeColorPipe],
     templateUrl: './list-pokemons.component.html',
     styles: ``
   })

@@ -6,7 +6,7 @@
         <!-- Directive *ngFor -->
         <div *ngFor="let pokemon of pokemonsList" class="col m4 s6">
             <!-- possible to add a color :  pkmnBorderCard="pink"-->
-            <div (click)="goToPokemon(pokemon)" class="card horizontal"  pkmnBorderCard >
+            <div (click)="goToPokemon(pokemon)" class="card horizontal" pkmnBorderCard >
                 <!-- Image -->
                 <div class="card-image">
                     <img [src]="pokemon.picture" />
