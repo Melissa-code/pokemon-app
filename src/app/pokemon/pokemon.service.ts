@@ -6,9 +6,9 @@ import { Pokemon } from './pokemon';
 // pour brancher ce service en injection de dépendance 
 // dans ce service on peut injecter d'autres services 
 @Injectable(
-  //{
-  //providedIn: 'root'
-  // }
+  {
+  providedIn: 'root'
+  }
 )
 export class PokemonService {
 
